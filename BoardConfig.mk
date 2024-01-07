@@ -77,6 +77,9 @@ TARGET_DISABLED_UBWC := true
 # Disable Postrender Cleanup
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
+# Disable Postrender Cleanup
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
