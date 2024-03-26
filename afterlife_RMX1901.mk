@@ -16,7 +16,7 @@ TARGET_BUILD_APERTURE_CAMERA := true
 $(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
  
  # Maintainer Flag
- AFTERLIFE_MAINTAINER := м∂_ιѕяαƒιℓ
+ AFTERLIFE_MAINTAINER := SHRAVAN
  
  # CoreGapps
 AFTERLIFE_GAPPS := true
