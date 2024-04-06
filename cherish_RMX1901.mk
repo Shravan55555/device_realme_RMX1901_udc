@@ -17,9 +17,8 @@ TARGET_USES_MINI_GAPPS := true
 USE_PIXEL_CHARGING := true
 TARGET_INCLUDE_CARRIER_SETTINGS := true
 TARGET_DISABLE_EPPE := true
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=SHRAVAN
-
+CHERISH_MAINTAINER := SHRAVAN
+    
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device
