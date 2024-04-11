@@ -12,8 +12,10 @@ TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_DISABLE_EPPE := true
+AOSPA_BUILD_VARIANT := beta
+TARGET_BOARD_PLATFORM := sdm710
+$(call inherit-product, vendor/aospa/target/product/version.mk)
 
-$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
