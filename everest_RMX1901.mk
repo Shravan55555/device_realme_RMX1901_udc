@@ -13,6 +13,7 @@ EVEREST_MAINTAINER := SHRAVAN
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := true
 TARGET_DISABLE_EPPE := true
 
 $(call inherit-product, vendor/everest/config/common_full_phone.mk)
