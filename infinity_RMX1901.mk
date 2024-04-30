@@ -7,11 +7,13 @@
 # Inherit some common DerpFest stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_NOT_USES_BLUR := true
-TARGET_USES_MINI_GAPPS := true
+WITH_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
-EXTRA_UDFPS_ICONS := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+INFINITY_MAINTAINER := Shravan
 
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -21,7 +23,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := derp_RMX1901
+PRODUCT_NAME := infinity_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_SYSTEM_NAME := RMX1901
