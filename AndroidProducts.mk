@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_RMX1901.mk
+    $(LOCAL_DIR)/evolution_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_RMX1901-userdebug \
-    statix_RMX1901-eng
+    evolution_RMX1901-userdebug \
+    evolution_RMX1901-eng
