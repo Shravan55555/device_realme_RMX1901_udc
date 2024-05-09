@@ -15,7 +15,7 @@ EXTRA_UDFPS_ANIMATIONS := true
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
