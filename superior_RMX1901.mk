@@ -4,18 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Evolution stuff
-EVO_BUILD_TYPE := COMMUNITY
+# Inherit some common Superior stuff
+SUPERIOR_BUILD_TYPE := COMMUNITY
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_MINI_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_HAS_UDFPS := true
+BUILD_WITH_GAPPS := true
 
 # Viper
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
-$(call inherit-product, vendor/evolution/config/common.mk)
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -24,7 +24,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := evolution_RMX1901
+PRODUCT_NAME := superior_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_SYSTEM_NAME := RMX1901
