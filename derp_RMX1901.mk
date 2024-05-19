@@ -7,7 +7,8 @@
 # Inherit some common DerpFest stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_NOT_USES_BLUR := true
-TARGET_USES_MINI_GAPPS := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_SUPPORTS_QUICK_TAP := true
 EXTRA_UDFPS_ICONS := true
 
@@ -15,9 +16,6 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-#Viper
-$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
