@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/everest_RMX1901.mk
+    $(LOCAL_DIR)/infinity_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    everest_RMX1901-userdebug \
-    everest_RMX1901-eng
+    infinity_RMX1901-userdebug \
+    infinity_RMX1901-eng
