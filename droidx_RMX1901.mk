@@ -10,12 +10,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-DROIDX_ZIP_TYPE := Gapps
+DROIDX_GAPPS := true
+TARGET_DISABLE_EPPE := true
 
 $(call inherit-product, vendor/droidx/config/common_full_phone.mk)
-
-# Camera
-$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
