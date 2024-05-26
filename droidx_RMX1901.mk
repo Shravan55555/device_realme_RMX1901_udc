@@ -9,15 +9,13 @@
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_BLUR := true
-INFINITY_MAINTAINER := SHRAVAN
-TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := true
-TARGET_DISABLE_EPPE := true
+DROIDX_ZIP_TYPE := Gapps
 
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
+# Camera
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -27,7 +25,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := infinity_RMX1901
+PRODUCT_NAME := droidx_RMX1901
 PRODUCT_MODEL := Realme X
 
 PRODUCT_SYSTEM_NAME := RMX1901

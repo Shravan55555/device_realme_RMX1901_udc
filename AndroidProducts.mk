@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_RMX1901.mk
+    $(LOCAL_DIR)/droidx_RMX1901.mk
 
 COMMON_LUNCH_CHOICES := \
-    infinity_RMX1901-userdebug \
-    infinity_RMX1901-eng
+    droidx_RMX1901-userdebug \
+    droidx_RMX1901-eng
