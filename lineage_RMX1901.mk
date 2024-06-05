@@ -4,27 +4,29 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Blaze stuff
-
+# Inherit some common Rising OS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_ENABLE_BLUR := true
-TARGET_DISABLE_EPPE := true
-
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS Flags
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Maintainer Flag
+RISING_MAINTAINER := Shravan
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RISING_MAINTAINER="Shravan"
+	
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
 
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
 PRODUCT_NAME := lineage_RMX1901
-PRODUCT_MODEL := Realme X
+PRODUCT_MODEL := RMX1901
 
 PRODUCT_SYSTEM_NAME := RMX1901
 PRODUCT_SYSTEM_DEVICE := RMX1901
