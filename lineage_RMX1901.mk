@@ -22,6 +22,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 
+# Sign builds
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/.android-certs/releasekey
+
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
