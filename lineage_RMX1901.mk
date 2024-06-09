@@ -4,14 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Blaze stuff
+# Inherit some common Evolution X stuff
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_ENABLE_BLUR := true
-TARGET_DISABLE_EPPE := true
+TARGET_USES_MINI_GAPPS:= true
 
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -41,3 +40,6 @@ BUILD_FINGERPRINT := Realme/RMX1901/RMX1901:11/RKQ1.201217.002/1626947099367:use
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# Sign builds
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/evolution-priv/keys/.android-certs/releasekey
