@@ -20,7 +20,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aosp/signing/keys/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aosp/signing/keys/.android-certs/releasekey
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
