@@ -41,5 +41,3 @@ BUILD_FINGERPRINT := Realme/RMX1901/RMX1901:11/RKQ1.201217.002/1626947099367:use
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# Sign builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/evolution-priv/keys/.android-certs/releasekey
