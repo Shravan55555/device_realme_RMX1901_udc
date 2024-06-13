@@ -275,7 +275,8 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_softomx.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -301,9 +302,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# Net
+# Network
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
+    android.system.net.netd@1.1.vendor \
+    libnetutils.vendor
 
 # Neural networks
 PRODUCT_PACKAGES += \
@@ -401,7 +403,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     libjson \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libsqlite.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -516,6 +519,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.media.audio.common.types-V2-cpp \
     libnl \
+    libpng.vendor:32 \
     libwfdaac_vendor \
     vendor.qti.hardware.display.config-V5-ndk \
     android.media.audio.common.types-V2-cpp
