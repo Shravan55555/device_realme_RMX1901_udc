@@ -519,6 +519,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.config-V5-ndk \
     android.media.audio.common.types-V2-cpp
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
