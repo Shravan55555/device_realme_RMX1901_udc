@@ -120,10 +120,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Camera Helper
 PRODUCT_PACKAGES += \
     RealmeCameraHelper
