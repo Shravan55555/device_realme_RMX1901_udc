@@ -209,7 +209,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
            <name>IKeymasterDevice</name>
            <instance>default</instance>
        </interface>
-       <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <!-- gatekeeper -->
     <hal format="hidl">

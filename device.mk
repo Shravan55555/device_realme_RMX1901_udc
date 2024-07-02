@@ -211,10 +211,7 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@4.0.vendor \
-    android.hardware.keymaster@4.0-impl:64 \
-    android.hardware.keymaster@4.0-service
-
+    android.hardware.keymaster@4.1.vendor
 
 # Freeform Multiwindow
 PRODUCT_COPY_FILES += \
