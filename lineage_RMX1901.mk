@@ -21,6 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
 
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
